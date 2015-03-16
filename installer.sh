@@ -24,8 +24,8 @@ sudo apt-get install -y git-core
 git config --global color.branch auto
 git config --global color.diff auto
 git config --global color.status auto
-git config --global user.name "Juampy"
-git config --global user.email juampy72@gmail.com
+git config --global user.name "Samuel"
+git config --global user.email samuel.solis@edoctores.com
 git config --global alias.st status
 git config --global alias.duff 'diff --cached'
 cat ~/Ubuntu-Installer/git-show-branch.txt >> $HOME/.bashrc
@@ -105,16 +105,16 @@ EOF
 sudo sed -i 's/xdebug_so_path/$xdebug_source/' /etc/php5/apache2/php.ini
 
 # Apache Solr
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get -y install oracle-java7-installer
-wget http://apache.rediris.es/lucene/solr/3.6.2/apache-solr-3.6.2.tgz
-mkdir ~/software
-tar -xvzf apache-solr-3.6.2.tgz -C ~/software/
+#sudo add-apt-repository ppa:webupd8team/java
+#sudo apt-get update
+#sudo apt-get -y install oracle-java7-installer
+#wget http://apache.rediris.es/lucene/solr/3.6.2/apache-solr-3.6.2.tgz
+#mkdir ~/software
+#tar -xvzf apache-solr-3.6.2.tgz -C ~/software/
 
 # Hub for Github
-sudo apt-get -y install ruby
-sudo curl http://defunkt.io/hub/standalone -sLo /usr/bin/hub && sudo chmod +x /usr/bin/hub
+#sudo apt-get -y install ruby
+#sudo curl http://defunkt.io/hub/standalone -sLo /usr/bin/hub && sudo chmod +x /usr/bin/hub
 
 # Compass
 sudo apt-get -y install ruby
