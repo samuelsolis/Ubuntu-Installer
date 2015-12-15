@@ -25,6 +25,11 @@ git config --global user.name "Samuel"
 git config --global user.email samuel.solis@edoctores.com
 git config --global alias.st status
 git config --global alias.duff 'diff --cached'
+git config --global alias.logf 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
+git config --global alias.ld 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative'
+git config --global alias.logv 'log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"'
+
+'"]]]"'
 wget https://raw.githubusercontent.com/git/git/8976500cbbb13270398d3b3e07a17b8cc7bff43f/contrib/completion/git-prompt.sh
 mv git-prompt.sh ~/.git-prompt.sh
 cat <<EOT>> ~/.bashrc
